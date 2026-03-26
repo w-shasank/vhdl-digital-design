@@ -1,14 +1,17 @@
+# Ignore everything by default
+*
 
-.Xil/
-*.jou
-*.log
-*.str
-*.cache/
-*.hw/
-*.ip_user_files/
-*.runs/
-*.sim/
-*.v
-*~
-*.swp
-.DS_Store
+# Allow directories so we can find files inside them
+!*/
+
+# Allow VHDL source files
+!*.vhd
+!*.vhdl
+
+# Allow PNG images
+!*.png
+
+# Allow Git files and documentation
+!.gitignore
+!README.md
+!readme.md
